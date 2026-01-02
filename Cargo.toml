@@ -40,18 +40,18 @@ adpcm = ["symphonium/adpcm"]
 profiling = []
 
 [dependencies]
-bevy_ecs = { version = "0.17.2", default-features = false }
-bevy_app = { version = "0.17.2", default-features = false }
-bevy_math = { version = "0.17.2", default-features = false, features = [
+bevy_ecs = {  path = "../../bevy_engine/crates/bevy_ecs", default-features = false }
+bevy_app = {  path = "../../bevy_engine/crates/bevy_app", default-features = false }
+bevy_math = { path = "../../bevy_engine/crates/bevy_math", default-features = false, features = [
   "curve",
   "std",
 ] }
-bevy_asset = { version = "0.17.2", default-features = false }
-bevy_transform = { version = "0.17.2", default-features = false, features = ["bevy-support"] }
-bevy_log = { version = "0.17.2", default-features = false }
-bevy_platform = { version = "0.17.2", default-features = false, features = ["alloc"] }
-bevy_time = { version = "0.17.2", default-features = false }
-bevy_reflect = { version = "0.17.2", default-features = false, features = [
+bevy_asset = { path = "../../bevy_engine/crates/bevy_asset", default-features = false }
+bevy_transform = { path = "../../bevy_engine/crates/bevy_transform", default-features = false, features = ["bevy-support"] }
+bevy_log = { path = "../../bevy_engine/crates/bevy_log", default-features = false }
+bevy_platform = { path = "../../bevy_engine/crates/bevy_platform", default-features = false, features = ["alloc"] }
+bevy_time = { path = "../../bevy_engine/crates/bevy_time", default-features = false }
+bevy_reflect = { path = "../../bevy_engine/crates/bevy_reflect", default-features = false, features = [
   "glam",
 ] }
 
